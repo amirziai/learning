@@ -1,0 +1,3 @@
+# Scala
+- [Combining Option and Iterable in for comprehensions in Scala](https://github.com/amirziai/learning/blob/master/scala/Combining%20Option%20and%20Iterable%20in%20%20for%20comprehensions%20in%20Scala.ipynb)
+- ...
