@@ -1,0 +1,3 @@
+# Statistics
+- [Coefficient of Determination (R2)](Coefficient%20of%20Determination%20(R2).ipynb)
+- ...
