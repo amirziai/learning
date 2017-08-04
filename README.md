@@ -4,4 +4,5 @@ Random learning
 - [Spark](spark)
 - [Python](python)
 - [Statistics](statistics)
+- [Computational Learning Theory](computational-learning-theory)
 - ...
