@@ -1,3 +1,3 @@
 # Reinforcement Learning
-- [pymdptoolbox (coming soon)](pymdptoolbox.ipynb)
+- [MDPs with pymdptoolbox](pymdptoolbox.ipynb)
 - ...
