@@ -8,4 +8,5 @@ A collection of notebooks covering concepts that I've had to learn or teach
 - [Machine Learning](machine-learning)
 - [Algorithms](algorithms)
 - [Reinforcement Learning](reinforcement-learning)
+- [Deep Learning](deep-learning)
 - ...
