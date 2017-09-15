@@ -2,6 +2,7 @@
 - [Naive Integer Multiplication](Naive-Integer-Multiplication.ipynb)
 - [Selection Sort](Selection-Sort.ipynb)
 - [Merge Sort](Merge-Sort.ipynb)
-- timsort (coming soon)
+- timsort
 - [Spanning Tree with Message Passing](Spanning-Tree-with-Message-Passing.ipynb)
+- Shortest path
 - ...
