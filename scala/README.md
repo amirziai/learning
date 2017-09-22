@@ -4,4 +4,5 @@
 - [Holt-Winters Double Exponential Smoothing](Holt-Winters%20Double%20Exponential%20Smoothing.ipynb)
 - [Scala bracket balancing](Scala%20bracket%20balancing.ipynb)
 - [Partial functions and currying](Partial-functions-and-currying.ipynb)
+- [Covariance and contravariance](Covariance-and-contravariance.ipynb)
 - ...
