@@ -9,4 +9,5 @@ A collection of notebooks covering concepts that I've had to learn or teach
 - [Algorithms](algorithms)
 - [Reinforcement Learning](reinforcement-learning)
 - [Deep Learning](deep-learning)
+- Logic
 - ...

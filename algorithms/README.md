@@ -4,6 +4,7 @@
 - [Merge Sort](Merge-Sort.ipynb)
 - timsort
 - [Spanning Tree with Message Passing](Spanning-Tree-with-Message-Passing.ipynb)
+- [Max-min fairness](Max-min-fairness.ipynb)
 - [Counting inversions](Counting-inversions.ipynb)
 - Shortest path
 - ...
