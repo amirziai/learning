@@ -5,8 +5,8 @@
 - [Spanning Tree with Message Passing](Spanning-Tree-with-Message-Passing.ipynb)
 - [Max-min fairness](Max-min-fairness.ipynb)
 - [Single-precision floating-point format](Single-precision-floating-point-format.ipynb)
-- [Trie](Trie.ipynb)
-- [Counting inversions](Counting-inversions.ipynb)
+- Trie
+- Counting inversions
 - Shortest path
 - timsort
 - ...
