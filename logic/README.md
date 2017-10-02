@@ -1,0 +1,3 @@
+# Logic
+- [Propositional Equivalence](Propositional+Equivalence.ipynb)
+- ...
