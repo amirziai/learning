@@ -1,3 +1,3 @@
 # Logic
-- [Propositional Equivalence](Propositional+Equivalence.ipynb)
+- [Propositional Equivalence](Propositional-Equivalence.ipynb)
 - ...
