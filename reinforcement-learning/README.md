@@ -4,4 +4,8 @@
 - [Widrow-Hoff rule, aka delta rule, the ADALINE, or LMS filter](Widrow-Hoff.ipynb)
 - [TD(λ) for bounded random walk](TD-lambda-for-bounded-random-walk.ipynb)
 - [Algorithmic Analysis for Value and Policy Iteration](Algorithmic-Analysis-for-Value-and-Policy-Iteration.ipynb)
+- Policy Iteration
+- Q-Learning
+- Open AI Gym Taxi-v2
+- Deep Q-Learning
 - ...
