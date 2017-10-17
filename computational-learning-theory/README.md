@@ -1,3 +1,0 @@
-# Computational Learning Theory
-- [1 - x <= exp(-x)](1%20-%20x%20<%3D%20exp(-x).ipynb)
-- ...
