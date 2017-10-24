@@ -8,4 +8,6 @@
 - Q-Learning
 - Open AI Gym Taxi-v2
 - Deep Q-Learning
+- Double Q-Learning
+- Experience/Prioritized/Hindsight Replay
 - ...
