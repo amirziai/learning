@@ -10,5 +10,6 @@
 - Open AI Gym Taxi-v2
 - Deep Q-Learning
 - Double Q-Learning
+- Dueling Q-Learning
 - Experience/Prioritized/Hindsight Replay
 - ...
