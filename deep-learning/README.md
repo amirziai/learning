@@ -6,5 +6,5 @@
 - [Max Pooling](Max-pooling.ipynb)
 - [Padding](Padding.ipynb)
 - [Convolution model from scratch (Coursera)](Convolutional-model-from-scratch.ipynb)
-- [Convolution Model Application (Coursera)](Convolutional-model-application.ipynb)
+- [Convolution model application (Coursera)](Convolutional-model-application.ipynb)
 - ...
