@@ -5,6 +5,7 @@
 - [TD(λ) for bounded random walk](TD-lambda-for-bounded-random-walk.ipynb)
 - [Algorithmic Analysis for Value and Policy Iteration](Algorithmic-Analysis-for-Value-and-Policy-Iteration.ipynb)
 - [Natural Evolution Strategies](Natural-Evolution-Strategies.ipynb)
+- [Bandit based Monte-Carlo planning](Bandit-based-monte-carlo-planning.ipynb)
 - Policy Iteration
 - Q-Learning
 - Open AI Gym Taxi-v2
