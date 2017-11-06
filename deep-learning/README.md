@@ -8,4 +8,5 @@
 - [Convolution model from scratch (Coursera)](Convolutional-model-from-scratch.ipynb)
 - [Convolution model application (Coursera)](Convolutional-model-application.ipynb)
 - [Residual networks](Residual-networks.ipynb)
+- [GloVe: Global Vectors for Word Representation](GloVe.ipynb)
 - ...
