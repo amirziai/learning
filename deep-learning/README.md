@@ -9,4 +9,5 @@
 - [Convolution model application (Coursera)](Convolutional-model-application.ipynb)
 - [Residual networks](Residual-networks.ipynb)
 - [GloVe: Global Vectors for Word Representation](GloVe.ipynb)
+- [Source-to-Source Debuggable Derivatives in Pure Python](tangent.ipynb)
 - ...
