@@ -5,5 +5,6 @@
 - [Melt with Pandas](Melt-with-Pandas.ipynb)
 - [defaultdict of fixed-length buffers](defaultdict-of-fixed-length-buffers.ipynb)
 - [Concatenate Scipy Sparse Matrices](Concatenate-Scipy-Sparse-Matrices.ipynb)
+- [namedtuple](namedtuple.ipynb)
 - Linear Programming with pulp
 - ...
