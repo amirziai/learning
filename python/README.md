@@ -6,5 +6,6 @@
 - [defaultdict of fixed-length buffers](defaultdict-of-fixed-length-buffers.ipynb)
 - [Concatenate Scipy Sparse Matrices](Concatenate-Scipy-Sparse-Matrices.ipynb)
 - [namedtuple](namedtuple.ipynb)
+- [joblib for parallel processing](joblib.ipynb)
 - Linear Programming with pulp
 - ...
