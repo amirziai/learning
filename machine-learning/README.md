@@ -4,4 +4,5 @@
 - [Gaussian Naive Bayes](Gaussian-Naive-Bayes.ipynb)
 - [scikit-learn](scikit-learn.ipynb)
 - Nested Cross-Validation
+- [Forecasting using machine learning](forecasting-ml.ipynb)
 - ...
