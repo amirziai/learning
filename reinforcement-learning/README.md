@@ -7,6 +7,8 @@
 - [Natural Evolution Strategies](Natural-Evolution-Strategies.ipynb)
 - [Bandit based Monte-Carlo planning](Bandit-based-monte-carlo-planning.ipynb)
 - [Vectorized epsilon-greedy bandits](vectorized-epsilon-greedy-bandits.ipynb)
+- [Parallel epsilon-greedy bandits](parallel-epsilon-greedy-bandits.ipynb)
+- [Knows What It Knows (KWIK)](kwik.ipynb)
 - Policy Iteration
 - Q-Learning
 - Open AI Gym Taxi-v2
