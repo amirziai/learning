@@ -5,4 +5,5 @@
 - [Scala bracket balancing](Scala%20bracket%20balancing.ipynb)
 - [Partial functions and currying](Partial-functions-and-currying.ipynb)
 - [Covariance and contravariance](Covariance-and-contravariance.ipynb)
+- [cats](cats.ipynb)
 - ...
