@@ -5,6 +5,6 @@
 - [scikit-learn](scikit-learn.ipynb)
 - [Forecasting using machine learning](forecasting-ml.ipynb)
 - [Uniform Manifold Approximation and Projection (UMAP)](umap.ipynb)
-- featureforge
+- [featureforge](featureforge.ipynb)
 - Nested Cross-Validation
 - ...
