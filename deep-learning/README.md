@@ -10,4 +10,5 @@
 - [Residual networks](Residual-networks.ipynb)
 - [GloVe: Global Vectors for Word Representation](GloVe.ipynb)
 - [Source-to-Source Debuggable Derivatives in Pure Python](tangent.ipynb)
+- [Deep learning as a mixed convex-combinatorial optimization problem](deep-learning-mixed-convex-combinatorial-optimization.ipynb)
 - ...
