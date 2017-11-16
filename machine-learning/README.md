@@ -4,5 +4,7 @@
 - [Gaussian Naive Bayes](Gaussian-Naive-Bayes.ipynb)
 - [scikit-learn](scikit-learn.ipynb)
 - [Forecasting using machine learning](forecasting-ml.ipynb)
+- [Uniform Manifold Approximation and Projection (UMAP)](umap.ipynb)
+- featureforge
 - Nested Cross-Validation
 - ...
