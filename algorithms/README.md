@@ -6,6 +6,7 @@
 - [Max-min fairness](Max-min-fairness.ipynb)
 - [Single-precision floating-point format](Single-precision-floating-point-format.ipynb)
 - [Online mean and variance](Online-mean-and-variance.ipynb)
+- [Excel Column](excel-columns.ipynb)
 - Trie
 - Counting inversions
 - Shortest path
