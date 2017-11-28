@@ -10,4 +10,5 @@ A collection of notebooks covering concepts that I've had to learn or teach
 - [Deep Learning](deep-learning)
 - [Logic](logic)
 - [Research Review](research-review)
+- [Data Analysis](data-analysis)
 - ...
