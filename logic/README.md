@@ -1,4 +1,5 @@
 # Logic
 - [Propositional Equivalence](Propositional-Equivalence.ipynb)
-- [Proofs using Fitch](Proofs-using-Fitch.ipynb)
+- [Fitch Proofs](Proofs-using-Fitch.md)
+- [Stanford CS157 Computational Logic Notes](stanford-cs157-computational-logic-notes.md)
 - ...
