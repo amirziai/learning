@@ -78,7 +78,6 @@ aka automated logic and reasoning
     * Consistency theorem
         * Φ is consistent with Ψ iff Φ & Ψ is satisfiable
         * Sentence Φ is consistent with {Φ_1, ..., Φ_n} iff Φ_1 & ... & Φ_n & Φ is satisfiable
-        * 
 
 ## Chapter 4 Propositional Proofs
 * Schema expression satisfying grammatical rules of our language
@@ -111,8 +110,6 @@ aka automated logic and reasoning
 * If one premise entails a conclusion then adding more premises can only make the entailment easier to satisfy. In other words if you want to know if a conclusion is entailed by a set of premises, showing that it’s entailed with one is enough
     * e.g.
     * is (p⇒(p∧q))⇒((p⇒q)⇒r) and q | ~p consistent with p => q? yes because q | ~p is equivalent to p => q (~p | q and reversed)
-    * 
-    * 
 
 ## Chapter 5 Propositional Resolution
 * Literal is an atomic or negation of an atomic (simple) sentence
