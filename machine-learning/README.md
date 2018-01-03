@@ -6,5 +6,6 @@
 - [Forecasting using machine learning](forecasting-ml.ipynb)
 - [Uniform Manifold Approximation and Projection (UMAP)](umap.ipynb)
 - [featureforge](featureforge.ipynb)
+- [Ranking Metrics: DCG, NDCG, and MAP](ranking-metrics-dcg-ndcg-and-map.ipynb)
 - Nested Cross-Validation
 - ...
