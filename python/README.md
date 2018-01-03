@@ -7,5 +7,6 @@
 - [Concatenate Scipy Sparse Matrices](Concatenate-Scipy-Sparse-Matrices.ipynb)
 - [namedtuple](namedtuple.ipynb)
 - [joblib for parallel processing](joblib.ipynb)
+- [Pandas regex filtering](pandas-regex-filtering.ipynb)
 - Linear Programming with pulp
 - ...
