@@ -1,7 +1,11 @@
 #!/usr/bin/env bash
 
-id=30
-file=hr
-c++ ${file}${id}.cpp -o run.o
-cat testcase | ./run.o
-
+file=attribute-parser
+c++ ${file}.cpp -o run.o
+DIFF=$(diff <(cat resources/${file}-input | ./run.o) resources/${file}-output)
+if ["$DIFF" == ""]
+then
+	echo "success"
+else
+	cat resources/${file}-input | ./run.o
+fi
