@@ -11,4 +11,5 @@ A collection of notebooks covering concepts that I've had to learn or teach
 - [Computational Logic](computational-logic)
 - [Research Review](research-review)
 - [Data Analysis](data-analysis)
+- [C++](cpp)
 - ...
