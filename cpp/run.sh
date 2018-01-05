@@ -7,5 +7,7 @@ if ["$DIFF" == ""]
 then
 	echo "success"
 else
+	echo ""
+	echo "Actual output"
 	cat resources/${file}-input | ./run.o
 fi
