@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-file=attribute-parser
+file=magic-spells
 c++ ${file}.cpp -o run.o
 DIFF=$(diff <(cat resources/${file}-input | ./run.o) resources/${file}-output)
 if ["$DIFF" == ""]
