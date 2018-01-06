@@ -1,5 +1,7 @@
 #include<bits/stdc++.h>
 
+// https://www.hackerrank.com/challenges/attending-workshops/problem
+
 //Define the structs Workshops and Available_Workshops.
 //Implement the functions initialize and CalculateMaxWorkshops
 
