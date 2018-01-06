@@ -1,7 +1,7 @@
-// https://www.hackerrank.com/challenges/overload-operators/problem
-// Operator Overloading
+#include <iostream>
+#include <string>
 
-#include<iostream>
+// https://www.hackerrank.com/challenges/overload-operators/problem
 
 using namespace std;
 
@@ -33,10 +33,22 @@ public:
     }
 };
 
-//Overload operators + and << for the class complex
-//+ should add two complex numbers as (a+ib) + (c+id) = (a+c) + i(b+d)
-//<< should print a complex number in the format "a+ib"
+// Overload operators + and << for the class complex
+// + should add two complex numbers as (a+ib) + (c+id) = (a+c) + i(b+d)
+// << should print a complex number in the format "a+ib"
 
+Complex operator+(Complex x, Complex y) {
+    Complex tmp;
+    tmp.a = x.a + y.a;
+    tmp.b = x.b + y.b;
+    return tmp;
+}
+
+std::ostream& operator<<(std::ostream& os, const Complex& x)
+{
+    os << x.a << "+i" << x.b;
+    return os;
+}
 
 int main()
 {
