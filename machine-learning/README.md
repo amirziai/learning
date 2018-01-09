@@ -7,5 +7,6 @@
 - [Uniform Manifold Approximation and Projection (UMAP)](umap.ipynb)
 - [featureforge](featureforge.ipynb)
 - [Ranking Metrics: DCG, NDCG, and MAP](ranking-metrics-dcg-ndcg-and-map.ipynb)
+- [Decision Trees](decision-trees.ipynb)
 - Nested Cross-Validation
 - ...
