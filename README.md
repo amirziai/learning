@@ -1,5 +1,5 @@
 # learning
-A collection of notebooks covering concepts that I've had to learn or teach
+A collection of notebooks covering concepts that I've learned or taught
 - [Scala](scala)
 - [Spark](spark)
 - [Python](python)
@@ -12,4 +12,5 @@ A collection of notebooks covering concepts that I've had to learn or teach
 - [Research Review](research-review)
 - [Data Analysis](data-analysis)
 - [C++](cpp)
+- [Julia](julia)
 - ...
