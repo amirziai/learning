@@ -8,5 +8,6 @@
 - [namedtuple](namedtuple.ipynb)
 - [joblib for parallel processing](joblib.ipynb)
 - [Pandas regex filtering](pandas-regex-filtering.ipynb)
+- [Getting the top K sorted elements from a generator](getting-the-top-k-sorted-elements-from-a-generator.ipynb)
 - Linear Programming with pulp
 - ...
