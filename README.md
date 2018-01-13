@@ -13,4 +13,5 @@ A collection of notebooks covering concepts that I've learned or taught
 - [Data Analysis](data-analysis)
 - [C++](cpp)
 - [Julia](julia)
+- [Probabilistic Graphical Models](probabilistic-graphical-models)
 - ...
