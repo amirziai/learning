@@ -1,3 +1,3 @@
 # Linear Algebra
-- [Basics](basics.ipynb)
+- [Linear Algebra Basics](linear-algebra-basics.ipynb)
 - ...
