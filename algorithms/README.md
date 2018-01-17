@@ -8,6 +8,7 @@
 - [Online mean and variance](Online-mean-and-variance.ipynb)
 - [Excel Columns](excel-columns.ipynb)
 - [Product of lists](product-of-lists.ipynb)
+- [Dynamic Programming Coin Change](dynamic-programming-coin-change.ipynb)
 - Trie
 - Counting inversions
 - Shortest path
