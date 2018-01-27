@@ -10,6 +10,7 @@
 - [Product of lists](product-of-lists.ipynb)
 - [Dynamic Programming Coin Change](dynamic-programming-coin-change.ipynb)
 - [Kahan Compensated Sum](kahan-compensated-sum.ipynb)
+- [log-sum-exp trick](log-sum-exp-trick.ipynb)
 - Trie
 - Counting inversions
 - Shortest path
