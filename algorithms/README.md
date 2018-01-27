@@ -9,6 +9,7 @@
 - [Excel Columns](excel-columns.ipynb)
 - [Product of lists](product-of-lists.ipynb)
 - [Dynamic Programming Coin Change](dynamic-programming-coin-change.ipynb)
+- [Kahan Compensated Sum](kahan-compensated-sum.ipynb)
 - Trie
 - Counting inversions
 - Shortest path
