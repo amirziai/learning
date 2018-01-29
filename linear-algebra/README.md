@@ -1,4 +1,4 @@
 # Linear Algebra
 - [Linear Algebra Basics](linear-algebra-basics.ipynb)
-- [Gaussian Elimination](gaussian-elimination-row-operations.ipynb)
+- [Gaussian Elimination Row Operations](gaussian-elimination-row-operations.ipynb)
 - ...
