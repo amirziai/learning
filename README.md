@@ -15,4 +15,5 @@ A collection of notebooks covering concepts that I've learned or taught
 - [Julia](julia)
 - [Probabilistic Graphical Models](probabilistic-graphical-models)
 - [Linear Algebra](linear-algebra)
+- [Systems](systems)
 - ...
