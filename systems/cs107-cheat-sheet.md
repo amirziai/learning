@@ -57,7 +57,7 @@
 
 ![Memory address space](https://i.stack.imgur.com/CvITh.png)
 
-### Stack
+### Stack vs. heap
 - 8MB of stack
 - size fixed at declaration, no option to resize
 - size can be constant or runtime expression but once sized cannot resize
