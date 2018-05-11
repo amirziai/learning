@@ -8,6 +8,8 @@
 - [ ] example of subverting CT check
 - [ ] ok to oversize stack???
 - [ ] why is freeing twice results in undefined behavior?
+- [ ] from lab 1: You might notice that the expression above bears an uncanny resemblance to the half-adder Michael showed in lecture. This is not just coincidence, as both perform a kind of addition using bitwise ops. How neat! (Bonus exploration for bit warriors: The half-adder used bitwise | to join the two subexpressions; the code above joins with +. Why must we use + here? Try substituting | and work out how the resulting expression now operates. The result is nearly equivalent, but not quite -- what has changed?)
+- [ ] ...
 
 ### Bit manipulation
 - byte is the smallest addressable unit
@@ -35,6 +37,15 @@
 - `x &= (x - 1)` clears lowest "on" bit in x
 - `(x ^ y) < 0` true if x and y have opposite signs
 - `(x & (x - 1)) == 0` is power of 2
+- `x >> 31` -1 if `x` is negative, 0 otherwise
+- It is signed if it fits in a signed integer. To make it unsigned, append a u suffix, e.g. `1234u`
+- if `x < 0` then `x ^ -1 + 1 == -x`, e.g. `0xffffffff (-1) ^ 0xfffffff8 (-8) == 0x7`
+- parity calculation for `unsigned int x` `int parity=0; for (int i=0; i < 32; i++) if (x & (1 << i)) parity ^= 1;`
+- `(val + mult-1) & ~(mult-1)` rounds `val` up to the closest multiple of `mult` if `mult` is a power of 2
+- for `int x, y` if `x, y >=0` midpoint `(x + y) / 2 == x + ((y - x) / 2) == ((unsigned int)x + (unsigned int)y) >> 1`
+- `INT_MIN - INT_MAX == 1`
+- `(x & y) + ((x ^ y) >> 1)`
+- `-1 >> 1 == -1`
 - 
 
 ![Number circle](https://ilyasbek.files.wordpress.com/2011/06/num_clk-21.gif?w=438&zoom=2)
@@ -53,8 +64,8 @@
 - array arithmetic is syntactic sugar for ptr arithmetic
 - 
 	```
-	ptr + i <=> &ptr[i]
-	*(ptr + i) <=> ptr[i]
+	ptr + i 	<=> &ptr[i]
+	*(ptr + i) 	<=> ptr[i]
 	```
 - `arr[5]; sizeof(arr) == 20` and `char *p = "hello"; sizeof(p) == 8`
 - Can't reassign arrays, `arr = NULL` doesn't compile
