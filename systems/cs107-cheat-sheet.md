@@ -30,7 +30,6 @@
 - overflow `255 + 0 = 0`, `0x100 % 256 = 0`
 - -1 is 0xff
 - 2’s complement, works on all int types  `-n = 0 - n = 0x100 - n = (0xff + 1) - n = (0xff - n) + 1 = ~n + 1`
-```
 
 ![Number circle](https://ilyasbek.files.wordpress.com/2011/06/num_clk-21.gif?w=438&zoom=2)
 
