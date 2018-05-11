@@ -9,7 +9,6 @@
 - [ ] ok to oversize stack???
 - [ ] why is freeing twice results in undefined behavior?
 - [ ] from lab 1: You might notice that the expression above bears an uncanny resemblance to the half-adder Michael showed in lecture. This is not just coincidence, as both perform a kind of addition using bitwise ops. How neat! (Bonus exploration for bit warriors: The half-adder used bitwise | to join the two subexpressions; the code above joins with +. Why must we use + here? Try substituting | and work out how the resulting expression now operates. The result is nearly equivalent, but not quite -- what has changed?)
-- [ ] ...
 
 ### Bit manipulation
 - byte is the smallest addressable unit
@@ -69,6 +68,7 @@
 	```
 - `arr[5]; sizeof(arr) == 20` and `char *p = "hello"; sizeof(p) == 8`
 - Can't reassign arrays, `arr = NULL` doesn't compile
+- if `arr1[] = {1,2,3,4,5}` then `&arr1[0] == arr1 == &arr1` all point to the address of base
 
 ![Memory address space](https://i.stack.imgur.com/CvITh.png)
 
@@ -97,10 +97,7 @@
 	dynamic construction not known at compile time / need to resize memory
 	need of persistent memory outside of the function call/stack frame
 	```
-- 
 
 ### gdb
 - `p/t` print binary
-- 
-
-...
+- ...
