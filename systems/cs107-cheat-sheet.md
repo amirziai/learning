@@ -43,10 +43,16 @@
 - pointer arithmetic on `int *` scales by `sizeof(int)` and `char *` scales by `sizeof(char)` == 1
 - types are compile-time (no runtime checking), if CT is subverted no RT errors are raised
 - `int arr[2]` and then `arr[10]` has no array out of bounds or other safety, just grabs the memory
-- `int *ptr = arr`; "decays" to address of first element (same as `&arr[0]`)
-- ...
+- `int *ptr = arr` "decays" to address of first element (same as `&arr[0]`)
+- array arithmetic is syntactic sugar for ptr arithmetic
+- 
+	```
+	ptr + i <=> &ptr[i]
+	*(ptr + i) <=> ptr[i]
+	```
+- `arr[5]; sizeof(arr) == 20` and `char *p = "hello"; sizeof(p) == 8`
+- Can't reassign arrays, `arr = NULL` doesn't compile
 
-```
 ![Memory address space](https://i.stack.imgur.com/CvITh.png)
 
 ### void*
