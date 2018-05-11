@@ -6,6 +6,8 @@
 - [ ] "signed/unsigned char important when promoting to larger type???"
 - [ ] `int my_isxdigit(int ch) return my_isdigit(ch) || ((unsigned)ch | 32) - ‘a’ < 6`
 - [ ] example of subverting CT check
+- [ ] ok to oversize stack???
+- [ ] why is freeing twice results in undefined behavior?
 
 ### Bit manipulation
 - byte is the smallest addressable unit
@@ -54,6 +56,33 @@
 - Can't reassign arrays, `arr = NULL` doesn't compile
 
 ![Memory address space](https://i.stack.imgur.com/CvITh.png)
+
+### Stack
+- 8MB of stack
+- size fixed at declaration, no option to resize
+- size can be constant or runtime expression but once sized cannot resize
+- stack arrays cannot be re-assigned, no pointer to array start
+- `void *` can be assigned to and passed to/from functions but:
+	```
+	cannot dereference
+	cannot do ptr arithmetic
+	cannot use array indexing
+	```
+- operator precedence, `(*s)++` is not the same as `*s++`
+- undefined behaviors if
+	```
+	write outside bounds
+	use after free
+	free twice
+	realloc non-heap address
+	```
+- prefer stack to heap, unless:
+	```
+	very large allocation that could blow out the stack
+	dynamic construction not known at compile time / need to resize memory
+	need of persistent memory outside of the function call/stack frame
+	```
+- 
 
 ### void*
 ...
