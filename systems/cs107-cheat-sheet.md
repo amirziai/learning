@@ -40,7 +40,7 @@
 ![Number circle](https://ilyasbek.files.wordpress.com/2011/06/num_clk-21.gif?w=438&zoom=2)
 
 ### C-Strings
-- C-strings are arrays of char
+- C-strings are arrays of `char`
 - segmentation fault is access to INVALID memory location
 - address is a memory location, represented as `unsigned long`
 - pointer is a variable that holds an address
