@@ -3,7 +3,7 @@
 
 Questions
 - [ ] example of subverting CT check
-- [ ] 
+- [ ] a
 
 ### Bit manipulation
 - byte is the smallest addressable unit
@@ -13,7 +13,8 @@ Questions
 - `x << 1` multiply by 2
 - 1 byte = 8 bits = 2 hex digits, e.g. 0xff = 1111 1111 = 255
 - char: 1 byte, short: 2 bytes 0 to 65k, int: 4 bytes 0 to 4B, long 8 bytes 0 to big number
-- ```ASCII
+- ```
+ASCII
 48    0x30    ‘0’
 65    0x41    ‘A'
 ...
