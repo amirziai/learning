@@ -1,9 +1,11 @@
 # Systems
 [Stanford CS107](http://cs107.stanford.edu/) cheat sheet
 
-Questions
+### Questions
+- [ ] signed vs unsigned differences in comparison, right shift, assignment, ...
+- [ ] "signed/unsigned char important when promoting to larger type???"
+- [ ] `int my_isxdigit(int ch) return my_isdigit(ch) || ((unsigned)ch | 32) - ‘a’ < 6`
 - [ ] example of subverting CT check
-- [ ] a
 
 ### Bit manipulation
 - byte is the smallest addressable unit
@@ -17,6 +19,7 @@ Questions
 	```
 	ASCII
 	48    0x30    ‘0’
+	...
 	65    0x41    ‘A'
 	...
 	97    0x61    ‘a’
@@ -32,18 +35,17 @@ Questions
 ![Number circle](https://ilyasbek.files.wordpress.com/2011/06/num_clk-21.gif?w=438&zoom=2)
 
 ### C-Strings
-```
-C-strings are arrays of char
-segmentation fault is access to INVALID memory location
-address is a memory location, represented as unsigned long
-pointer is a variable that holds an address
-& is the address of, &var is the location in memory where var is being stored
-addresses can be compared and added/subtracted
-pointer arithmetic on int* scales by sizeof(int) and char* scales by sizeof(char) == 1
-types are compile-time (no runtime checking), if CT is subverted no RT errors are raised
-int arr[2] and then arr[10] has no array out of bounds or other safety, just grabs the memory
-int *ptr = arr; "decays" to address of first element (same as &arr[0])
-
+- C-strings are arrays of char
+- segmentation fault is access to INVALID memory location
+- address is a memory location, represented as `unsigned long`
+- pointer is a variable that holds an address
+- `&` is the address of, `&var` is the location in memory where `var` is being stored
+- addresses can be compared and added/subtracted
+- pointer arithmetic on `int *` scales by `sizeof(int)` and `char *` scales by `sizeof(char)` == 1
+- types are compile-time (no runtime checking), if CT is subverted no RT errors are raised
+- `int arr[2]` and then `arr[10]` has no array out of bounds or other safety, just grabs the memory
+- `int *ptr = arr`; "decays" to address of first element (same as `&arr[0]`)
+- ...
 
 ```
 ![Memory address space](https://i.stack.imgur.com/CvITh.png)
