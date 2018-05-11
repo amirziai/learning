@@ -1,3 +1,3 @@
-# Statistics
-- [Bit manipulation](bit-manipulation.md)
+# Systems
+- [CS107 cheat sheet](cs107-cheat-sheet.md)
 - ...
