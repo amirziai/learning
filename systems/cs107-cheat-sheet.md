@@ -27,11 +27,15 @@
 	97    0x61    ‘a’
 	```
 - half adder, full adder requires handling of carries
-- `a + b = ((a & b) << 1) | (a ^ b)` only when a and b are 1-bit
-- LSB looks like XOR, next bit looks like AND
+	- `a + b = ((a & b) << 1) | (a ^ b)` only when a and b are 1-bit
+	- LSB looks like XOR, next bit looks like AND
 - overflow `255 + 0 = 0`, `0x100 % 256 = 0`
-- -1 is 0xff
-- 2’s complement, works on all int types  `-n = 0 - n = 0x100 - n = (0xff + 1) - n = (0xff - n) + 1 = ~n + 1`
+- `0xff` is -1
+- 2’s complement, works on all `int` types  `-n = 0 - n = 0x100 - n = (0xff + 1) - n = (0xff - n) + 1 = ~n + 1`
+- `x &= (x - 1)` clears lowest "on" bit in x
+- `(x ^ y) < 0` true if x and y have opposite signs
+- `(x & (x - 1)) == 0` is power of 2
+- 
 
 ![Number circle](https://ilyasbek.files.wordpress.com/2011/06/num_clk-21.gif?w=438&zoom=2)
 
@@ -84,5 +88,8 @@
 	```
 - 
 
-### void*
+### gdb
+- `p/t` print binary
+- 
+
 ...
