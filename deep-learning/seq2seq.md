@@ -26,5 +26,11 @@ If we've started with
 Then the next most likley greedy selection might be *going* and a better global sentence will be tossed in greedy search.
 ![Why not greedy search](resources/AC5AD23F-8615-492E-B010-6903A1B3C389.png)
 
+### Beam Search
+Beam width = `B`
+Beam width is the number of candidates considered
+Let's say `B=3`
+![Beam search](resources/BB7C0960-E71F-466F-AEBD-F90869006789.png)
+
 
 
