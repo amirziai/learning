@@ -56,7 +56,14 @@ If most of error is attributed to beam search then it may be warranted to incera
 ![Error analysis in beam search 2](resources/71C1D04C-79B7-4E8E-BED4-9249C01FA5DF.png)
 
 ### Bleu score
+Bleu score on unigrams
 ![Bleu precision](resources/705E0418-A132-4CEA-B05C-BF393E73C9DF.png)
+
+Bleu score on bigrams
+![Bleu bigram](resources/3F2AD276-D22B-4EAB-96FF-A206623B5410.png)
+
+Bleu score on n-grams
+![Bleu n-gram](resources/BE37B458-F0DA-4BAF-B714-2E5BA7025565.png)
 
 
 
