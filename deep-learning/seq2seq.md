@@ -18,7 +18,7 @@ conditional language model e.g. P(English translation | French sentence)
 
 ![MT as conditional LM](resources/6E36FDCD-B718-40F7-866B-7C1026EC7145.png)
 
-![Most likely translation](79024588-EA4F-4630-9592-6B303ECD9D0C.png)
+![Most likely translation](resources/79024588-EA4F-4630-9592-6B303ECD9D0C.png)
 
 If we've started with
 > Jane is ...
