@@ -83,5 +83,29 @@ LSTMs used more commonly
 
 Calculating attention
 Use softmax
-$S^t$ is the hidden state from `t-1`
-![](resources/)
+`S` is the hidden state from `t-1`
+Runs in quadratic time (i.e. quadratic in # of words in the sentence)
+![Computing attention](resources/EFD97E80-271E-4F70-8A0A-8930F693CED0.png)
+
+![Attention visualization](resources/8F8E6A0C-2554-40D6-89B1-F213704D92F6.png)
+
+### Speech recognition
+Microphone detects small changes in air pressure
+
+Spectrograms
+Phoneme representation not necessary with end-to-end deep learning
+300-3,000 hours of audio in academia
+Industrial applications use 10,000+ hours or sometimes 100,000+ of transcribed audio
+
+![Speech recognition](resources/E9EABC37-2017-4EF7-AE13-54B0216870D4.png)
+
+Can use attention models for speech recognition
+![Attention model for speech recognition](resources/07DF13AB-04CB-4E23-82EF-91E2260A576D.png)
+
+Connectionist Temporal Classification (CTC) cost for speech recognition
+
+![CTC](resources/5D442F5A-45AC-4B1D-838E-0991BF2B6E97.png)
+
+Trigger word detection
+![Trigger word](resources/AA198D55-BEB5-4A3C-A7CF-B82F74A15D4D.png)
+
