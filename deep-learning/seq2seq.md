@@ -1,10 +1,9 @@
 # Sequence 2 Sequence Models
 
 Notes from [Andrew Ng's deeplearning.ai Deep Learning Specialization](https://www.coursera.org/learn/nlp-sequence-models)
-
+[Lecture videos on Coursera](https://www.coursera.org/learn/nlp-sequence-models/lecture/v2pRn/picking-the-most-likely-sentence)
 
 ### Basic models
-[Lecture](https://www.coursera.org/learn/nlp-sequence-models/lecture/v2pRn/picking-the-most-likely-sentence)
 
 ![Sequence to Sequence model](resources/465106B4-C91B-4A94-AB3F-9D6B891BDCB5.png)
 
@@ -32,5 +31,9 @@ Beam width is the number of candidates considered
 Let's say `B=3`
 ![Beam search](resources/BB7C0960-E71F-466F-AEBD-F90869006789.png)
 
+Instantiating 3 copies of the network in each step (i.e. one for each candidate).
 
+![Beam search 3rd step](resources/13819EAC-4C94-49DF-80E6-F39150D7F1F3.png)
+
+If `B=1` then beam search degenerates to greedy search
 
