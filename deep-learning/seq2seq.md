@@ -42,7 +42,7 @@ Multiplications can result in numerical underflow, maximizing the sum of log pro
 ![Numerical underflow](resources/CAB51805-F9B7-47BD-AB4A-6097E4F835A6.png)
 
 This objective function tends to prefer shorter sentences as there's less multiplications of less than 1 values.
-![Length normalization](70559C79-4960-41E3-8B6B-D2E96A9B34B7.png)
+![Length normalization](resources/70559C79-4960-41E3-8B6B-D2E96A9B34B7.png)
 
 Normalized log-likelihood
 
@@ -54,4 +54,9 @@ How to choose beam width B? computational complexity vs. result quality. Beam wi
 
 If most of error is attributed to beam search then it may be warranted to incerase `B`
 ![Error analysis in beam search 2](resources/71C1D04C-79B7-4E8E-BED4-9249C01FA5DF.png)
+
+### Bleu score
+![Bleu precision](resources/705E0418-A132-4CEA-B05C-BF393E73C9DF.png)
+
+
 
