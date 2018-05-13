@@ -83,5 +83,5 @@ LSTMs used more commonly
 
 Calculating attention
 Use softmax
-$$S^t$$ is the hidden state from `t-1`
+$S^t$ is the hidden state from `t-1`
 ![](resources/)
