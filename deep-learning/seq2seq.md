@@ -72,3 +72,16 @@ Image captioning and MT use bleu score
 ### Attention
 ![Long sequences](resources/092862A8-37D5-4DE2-A118-2F6D48409803.png)
 
+Compute attention weights
+![Attention](resources/74CAA003-ED3E-44EE-B831-75323C20ED01.png)
+
+LSTMs used more commonly
+
+![Context](resources/F0172EDB-C7CC-41B9-9C94-6111A52349D4.png)
+
+![Context for step 2](resources/4D2DCB61-8E31-45F0-8D12-3809275C5ADC.png)
+
+Calculating attention
+Use softmax
+$$S^{<t-1>}$$ is the hidden state from `t-1`
+![](resources/)
