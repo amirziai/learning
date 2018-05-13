@@ -9,6 +9,9 @@
 - [ ] ok to oversize stack???
 - [ ] why is freeing twice results in undefined behavior?
 - [ ] from lab 1: You might notice that the expression above bears an uncanny resemblance to the half-adder Michael showed in lecture. This is not just coincidence, as both perform a kind of addition using bitwise ops. How neat! (Bonus exploration for bit warriors: The half-adder used bitwise | to join the two subexpressions; the code above joins with +. Why must we use + here? Try substituting | and work out how the resulting expression now operates. The result is nearly equivalent, but not quite -- what has changed?)
+- [ ] relative accuracy/error vs precision
+- [ ] From lab 5 Note the lack of symmetry in the definition names: INT_MAX/FLT_MAX are largest magnitude positive int/float, but INT_MIN is largest magnitude negative int whereas FLT_MIN is smallest magnitude positive float (normalized). The largest magnitude negative float is -FLT_MAX
+- [ ] 
 
 ### Bit manipulation
 - byte is the smallest addressable unit
@@ -45,7 +48,6 @@
 - `INT_MIN - INT_MAX == 1`
 - `(x & y) + ((x ^ y) >> 1)`
 - `-1 >> 1 == -1`
-- 
 
 ![Number circle](https://ilyasbek.files.wordpress.com/2011/06/num_clk-21.gif?w=438&zoom=2)
 
@@ -101,3 +103,27 @@
 ### gdb
 - `p/t` print binary
 - ...
+
+### floats
+- `(sign) mantissa x 10 ^ exponent`
+- IEEE 754
+- a *transcendental function* "transcends" algebra in that it cannot be expressed in terms of a finite sequence of the algebraic operations of addition, multiplication, and root extraction. Examples of transcendental functions include the exponential function, the logarithm, and the trigonometric functions.
+- once upon a time there was a floating point co-processor (before that it was done in SW!)
+- we hava both + and - 0 !
+	- they compare as equal ([0] * 32 == [1] + [0] * 31 or 0 == (1 << 32)) in float
+- quarter of 32
+- exponents go from -126 to 127
+- 253, NaN and np.inf are reserved
+- `double` is the more native type, the work to truncate it down to 32 makes it actually smaller times! don't make any such assumptions, depends on the system
+- binary fractions
+- 1/3 is non terminating so can't be exactly represented
+- 0.1 is terminating but it still can't be exactly represented, 1/16+1/32+1/256+1/512+1/1024+...
+- `(-1) ^ S * 2 ^(E - bias) * 1.M` (mantessa)
+	- bias is `01...1` so if exponent has 5 bits we have `01111`
+	- Amount of bits in `M` defines the precision
+	- denorm allows us to go slightly lower
+- `inf - inf = nan`
+- `nan == nan? false`
+- `nan > nan? false`
+- `nan < nan? false`
+
