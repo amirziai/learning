@@ -65,5 +65,10 @@ Bleu score on bigrams
 Bleu score on n-grams
 ![Bleu n-gram](resources/BE37B458-F0DA-4BAF-B714-2E5BA7025565.png)
 
+![Bleu](resources/A056B10E-FF5D-492A-9140-DFF937CEB3E3.png)
 
+Image captioning and MT use bleu score
+
+### Attention
+![Long sequences](resources/092862A8-37D5-4DE2-A118-2F6D48409803.png)
 
