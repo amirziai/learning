@@ -108,4 +108,3 @@ Connectionist Temporal Classification (CTC) cost for speech recognition
 
 Trigger word detection
 ![Trigger word](resources/AA198D55-BEB5-4A3C-A7CF-B82F74A15D4D.png)
-

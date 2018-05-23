@@ -2,6 +2,13 @@
 [Stanford CS107](http://cs107.stanford.edu/) cheat sheet
 
 ### Questions
+- [ ] Arithmetic vs. logical shift
+- [ ] Operations on pointers and longs (64-bit types) will use the full r-named registers, and operations on ints will use the e-named subregisters.
+- [ ] Signed vs. unsigned integer division (lab 6)
+- [ ] ...
+
+
+### Questions
 - [ ] signed vs unsigned differences in comparison, right shift, assignment, ...
 - [ ] "signed/unsigned char important when promoting to larger type???"
 - [ ] `int my_isxdigit(int ch) return my_isdigit(ch) || ((unsigned)ch | 32) - ‘a’ < 6`
@@ -127,3 +134,7 @@
 - `nan > nan? false`
 - `nan < nan? false`
 
+### Assembly
+- In many programming environments for C and C-derived languages on 64-bit machines, "int" variables are still 32 bits wide, but long integers and pointers are 64 bits wide. These are described as having an LP64 data model.
+- addition, subtraction, and multiplication operate equivalently on signed and unsigned integers, it's not quite so with division.
+- 
