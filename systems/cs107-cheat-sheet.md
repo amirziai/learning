@@ -5,6 +5,9 @@
 - [ ] Arithmetic vs. logical shift
 - [ ] Operations on pointers and longs (64-bit types) will use the full r-named registers, and operations on ints will use the e-named subregisters.
 - [ ] Signed vs. unsigned integer division (lab 6)
+- [ ] Registers and register flags, what happens when multiple things running at the same time on the processor?
+- [ ] How is the generated memory addresses in assembly are always the same? virtual memory?
+- [ ] `cmovg` usually used for ternary expressions?
 - [ ] ...
 
 
@@ -138,3 +141,19 @@
 - In many programming environments for C and C-derived languages on 64-bit machines, "int" variables are still 32 bits wide, but long integers and pointers are 64 bits wide. These are described as having an LP64 data model.
 - addition, subtraction, and multiplication operate equivalently on signed and unsigned integers, it's not quite so with division.
 - 
+```
+int max(int x, int y)
+    return x > y ? x : y
+```
+and the following assembly
+```
+cmp 	%edi, %esi
+mov		%edi, %eax
+cmovg	%esi, %eax
+```
+the `cmovg` conditional move is reading the flag from 2 instructions before
+- The top of the stack is a lower address
+- Application Binary Interface (ABI)
+- Leaf function: no call to other functions
+- 
+
