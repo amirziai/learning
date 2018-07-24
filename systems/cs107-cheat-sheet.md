@@ -8,6 +8,10 @@
 - [ ] Registers and register flags, what happens when multiple things running at the same time on the processor?
 - [ ] How is the generated memory addresses in assembly are always the same? virtual memory?
 - [ ] `cmovg` usually used for ternary expressions?
+- [ ] reading the output of `display/8gx $rsp`
+- [ ] 16 byte aligned
+- [ ] addresses in stack which way would an int go?
+- 
 - [ ] ...
 
 
@@ -155,5 +159,13 @@ the `cmovg` conditional move is reading the flag from 2 instructions before
 - The top of the stack is a lower address
 - Application Binary Interface (ABI)
 - Leaf function: no call to other functions
+- In assembly return of value and control are two totally different things
+	- Return of value done through registers
+	- `retq` or `rep retq` are just returning back control
+- Stack is growing down
+	- Pushing to stack => decrement `%rsp` to make space
+	- Pop copies the topmost value from stack into register and incremenets `%rsp`
+- `(gdb) x/4gx $rsp   // 4 quadwords, in hex, read from top of stack`
 - 
+
 

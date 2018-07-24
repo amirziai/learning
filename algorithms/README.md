@@ -11,6 +11,12 @@
 - [Dynamic Programming Coin Change](dynamic-programming-coin-change.ipynb)
 - [Kahan Compensated Sum](kahan-compensated-sum.ipynb)
 - [log-sum-exp trick](log-sum-exp-trick.ipynb)
+- [Complete DAG topological sort](x)
+- [Divide and conquer matching](x)
+- [Red-black tree rules](x)
+- [Linear-time sort](x)
+- [Count overlapping intervals](x)
+- [](x)
 - Trie
 - Counting inversions
 - Shortest path
