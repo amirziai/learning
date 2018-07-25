@@ -1,28 +1,19 @@
-<style TYPE="text/css">
-code.has-jax {font: inherit; font-size: 100%; background: inherit; border: inherit;}
-</style>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-    tex2jax: {
-        inlineMath: [['$','$'], ['\\(','\\)']],
-        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'] // removed 'code' entry
-    }
-});
-MathJax.Hub.Queue(function() {
-    var all = MathJax.Hub.getAllJax(), i;
-    for(i = 0; i < all.length; i += 1) {
-        all[i].SourceElement().parentNode.className += ' has-jax';
-    }
-});
-</script>
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-
-
 # Algorithms
 [Stanford CS161](http://cs161.stanford.edu/) cheat sheet
 
+### TODO
+- [ ] add subs method notes
+- [ ] subs method example
+- [ ] subs method for linear time select T(n) <= T(n/5) + T(7n/10) + O(n) <= Cn/5 + 7/10Cn + dn <= Cn so choose C=10d and then C=max{7, 10d} for all n>1, T(n)<=Cn => T(n)=O(n)
+- [ ] 
+
 ### Questions
-- [ ] ?
+- [ ] worst-case lower bound
+- [ ] Recurrence T(n) = 3T(n/4) + nlogn
+- [ ] Recurrence T(n) = 2T(n/2) + nlogn
+- [ ] Recurrence T(n) = T(n-1) + O(n)
+- [ ] Lecture 3 page 10 "but we can solve select(B, m/2) for len(B)=m < n assuming correctness of the algorithm on smaller inputs is a helpful technique for designing divide and conquer algorithms"
+- [ ] T(n) <= T(n/5) + T(0.7n) + O(n) for linear time selection, 
 - ...
 
 ## Algorithmic Analysis
@@ -82,7 +73,21 @@ Recursive
 ```
 
 ### Solving recurrences
-- Simplifications: rewrite $$\Omega$$ terms, choose $$n$$ to be a power of 2, set $$c=\max (c_1, c2)$$.
+- Simplifications: rewrite Omega terms, choose n to be a power of 2, set c=max(c_1, c_2). Methods: recursion tree, iteration, master, substitution.
+- Master method, for T(n)=a.T(n/b)+O(n^d)
+	- a=b^d   => O(n^d * logn)
+	- a < b^d => O(n^d)
+	- a > b^d => O(n^log_b(a))
+
+### Linear-time sorting
+- Median of sub-medians =~ median of the whole list
+	- At least 3 * (ceil(g / 2) -1 -1) + 2 elements guaranteed to be smaller than median of medians
+	- g is the number of groups, assuming 5 elements in each group
+	- first -1 is to exclude the list with median of median (would be the same if we did floor(g / 2)?)
+	- second -1 is for the list with leftovers which in the worst case would have all items larger than median of median
+	- Number of things larger than median of median: (n-1) - (3 * ceil((n / 5) / 2) -2 + 2) <= 0.7n + 3
+	- n-1 is everything except for the median
+
 
 ## Sorting
 x
