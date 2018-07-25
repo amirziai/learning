@@ -55,8 +55,10 @@ Iterative
 	- i=n => correct
 
 Recursive
-	- define inductive hypothesis
-	- 
+	- define inductive hypothesis (correct for input sizes 1 to i)
+	- base case (i < small constant)
+	- inductive step (i=>i+1 OR {1,2,...,i} => i+1)
+	- i=n => correct
 ```
 
 ## Sorting
