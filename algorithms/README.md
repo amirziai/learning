@@ -1,4 +1,5 @@
 # Algorithms
+- [CS161 cheat sheet](cs161-cheat-sheet.md)
 - [Naive Integer Multiplication](Naive-Integer-Multiplication.ipynb)
 - [Selection Sort](Selection-Sort.ipynb)
 - [Merge Sort](Merge-Sort.ipynb)
@@ -16,7 +17,6 @@
 - [Red-black tree rules](x)
 - [Linear-time sort](x)
 - [Count overlapping intervals](x)
-- [](x)
 - Trie
 - Counting inversions
 - Shortest path
