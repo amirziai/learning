@@ -61,6 +61,9 @@ Recursive
 	- i=n => correct
 ```
 
+### Solving recurrences
+- 
+
 ## Sorting
 x
 
