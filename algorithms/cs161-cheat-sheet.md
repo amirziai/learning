@@ -62,7 +62,7 @@ Recursive
 ```
 
 ### Solving recurrences
-- 
+- Simplifications: rewrite $$\Omega$$ terms, choose $$n$$ to be a power of 2, set $$c=\max (c_1, c2)$$.
 
 ## Sorting
 x
