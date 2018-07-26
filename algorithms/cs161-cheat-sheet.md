@@ -5,16 +5,24 @@
 - [ ] add subs method notes
 - [ ] subs method example
 - [ ] subs method for linear time select T(n) <= T(n/5) + T(7n/10) + O(n) <= Cn/5 + 7/10Cn + dn <= Cn so choose C=10d and then C=max{7, 10d} for all n>1, T(n)<=Cn => T(n)=O(n)
+- [ ] Expected Runtime of Randomized Quicksort
 - [ ] 
 
 ### Questions
 - [ ] worst-case lower bound
+- [ ] worst-case for linear time selection is Omega(n)
 - [ ] Recurrence T(n) = 3T(n/4) + nlogn
 - [ ] Recurrence T(n) = 2T(n/2) + nlogn
 - [ ] Recurrence T(n) = T(n-1) + O(n)
 - [ ] Lecture 3 page 10 "but we can solve select(B, m/2) for len(B)=m < n assuming correctness of the algorithm on smaller inputs is a helpful technique for designing divide and conquer algorithms"
-- [ ] T(n) <= T(n/5) + T(0.7n) + O(n) for linear time selection, 
-- ...
+- [ ] T(n) <= T(n/5) + T(0.7n) + O(n) for linear time selection. T(n/5) comes from median of median, T(0.7n) comes from the upper bound on the numbe of elements that will be in either left or right lists, and O(n) comes from the partitioning?
+- [ ] shallow tree for comparison sort. is this tree structure unique for a binary tree which produces exactly the n! permutations?
+- d(x) = 1 + d(x.L) + d(x.R), what is the 1 doing there?
+
+## Useful stuff
+- Sum_c^n 1/c = O(logn)
+- Sum of infinite geometric series Sum_{i=0}^{\infty}r^k where 0 < k < 1 = 1 / (1 - r)
+
 
 ## Algorithmic Analysis
 ### Insertion sort
@@ -69,7 +77,7 @@ Recursive
 	- define inductive hypothesis (correct for input sizes 1 to i)
 	- base case (i < small constant)
 	- inductive step (i=>i+1 OR {1,2,...,i} => i+1)
-	- i=n => correct
+	- i=n => correct, it's called on the entire list so because inductive step holds at i=n we have the correct answer
 ```
 
 ### Solving recurrences
@@ -79,7 +87,8 @@ Recursive
 	- a < b^d => O(n^d)
 	- a > b^d => O(n^log_b(a))
 
-### Linear-time sorting
+### Linear-time selection
+- Comparison-based
 - Median of sub-medians =~ median of the whole list
 	- At least 3 * (ceil(g / 2) -1 -1) + 2 elements guaranteed to be smaller than median of medians
 	- g is the number of groups, assuming 5 elements in each group
@@ -90,16 +99,69 @@ Recursive
 
 
 ## Sorting
-x
+- Any deterministic comparison-based sorting algo requires Omega(nlogn) time
+	- Longest path in a decision tree that represents all the comparisons
+	- There are n! leafs
+	- Depth of the shallowest tree with this many leaves => log(n!).
+- Bucket sort O(max{nlogn, n+k})
+- Radix sort O(d(n+k))
+	- Needs extra memory to bucketize
+	- Needs info about ordering and buckets
 
 ## Randomized algorithms
-x
+- Las Vegas algos guarantee correctnss not runtime. Monte Carlo the other way around.
+- Bogosort
+	- 1/n! probability of landing on a sorted list
+	- Expected value of geometric distribution is 1/p=n!
+	- Each iteration of bogosort requires O(n) work so the expected runtime is O(n.n!)
+
+### Randomized selection
+- Expected runtime
+	- if we select a pivot in the middle 50% we will shrink the list to at least 3/4
+	- in phase k we will have at most n(3/4)^k elements
+	- the last phase is ceil(log_{4/3} n)
+
+### Hashing
+- Expected # of items in u_x’s bucket is O(1) is good
+- All buckets have expected size O(1) is bad
+- Exhaustive set of hash functions n^|U|
+- p(h(u_x) = h(u_y)) = 1/n for the exhaustive set H
+- How many bits to write down the name of one of the x=n^|U| functions? logx=|U|logn, enough to do direct addressing!
+- Universal hash function, for all u_x, u_y pairs probability of collision over the set of hash functions must be less than or equal to 1 / # of buckets (n)
+	- Hash integer, h=ax + b % p % n for some prime p >= |U| and a and b in {1,2,3...,p-1} 
+		- |H| = p(p-1) = O(p^2)=O(|U|^2)
+		- space needed to store is log(|U|^2)=O(log|U|) << O(|U|logn)
+	- u-bit string x
+		- h(x)=Ax, u=log|U|, b=logn, A=b x u random matrix of 0's and 1's
+		- 2^{ub} binary matrices = O(|U|^{logn}) << n^{|U|} but much smaller than 
 
 ## Tree algorithms
-x
+- Predecessor of 5 in 5 -> 3 -> 4 is 4 and not 3
+### Red-black tree
+- NIL child is black. for all vertices all paths from v to NIL descendants has the same # of blacks
+- bLack vertices balanced, red are spread out
+- can be maintained by rotations
+- non-NIL descendants of x >= 2^{b(x)}-1 where b(x) = largest # of black nodes in any path from x to NIL excluding x but including NIL descendants
+- d(x) = # of non-NIL descendants of x, d(x) = 1 + d(x.left) + d(x.right)
+- Red-black tree has height <= 2 log_2(n+1)=O(logn)
+	- n >= b^{b(r) - 1} >= 2^{h/2}-1 => h <= 2log_2{n+1}
+	- number of black vertices is at least the number of red vertices
+	- b(x) >= half of the height
 
 ## Graph algorithms
-x
+- Adjacency matrix edge membership O(1), neighbors of u, O(|V|), space O(|V|^2)
+- Adjacency list (better for sparse graphs) edge membership O(deg(u) or deg(v)), neighbor O(deg(v)), space O(|V|+|E|)
+- dfs, O(|V|+|E|), searches the connected component, directed/undirected
+	- topological sort, if (u, v) in E then end_time u > end_time of v
+	- dfs in-order traversal => BST in order, print when marked done
+	- exact traversal
+- bfs, shortest path between u and v
+	- bipartite: starting from any vertex and alternate colors on levels (# of steps away from source), if any vertex is attempted to be colored 2 different colors => not bipartite
+		- bfs colors two neighbors the same color iff it's found a cycle of odd length. impossible to color an odd cycle with 2 colors s.t. no 2 neighbors have the same color.
+- strongly connected components (scc). kosaraju's. 1- dfs-loop 2- reverse edges (helps to have incoming neighobrs) 3- repeat dfs-loop starting with the largest end time, SCCs are isolated sub-graphs
+	- SCC metagraph is a DAG (if not 2 SCCs collapse into one)
+
+
 
 ### Single Source Shortest Path (SSSP)
 - Dijkstra's works if no negative edges
