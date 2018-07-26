@@ -22,7 +22,9 @@
 ## Useful stuff
 - Sum_c^n 1/c = O(logn)
 - Sum of infinite geometric series Sum_{i=0}^{\infty}r^k where 0 < k < 1 = 1 / (1 - r)
-
+- E[P(T)]=Sum E[P(T)|r(T)=i].P(r(T)=i) where P(r(T)=i)
+- quicksort recurrence P(n)=n-1 + 1/n Sum_{i=0}&{n-1} (P(i) + P(n-i-1))
+- ...
 
 ## Algorithmic Analysis
 ### Insertion sort
@@ -161,7 +163,7 @@ Recursive
 - strongly connected components (scc). kosaraju's. 1- dfs-loop 2- reverse edges (helps to have incoming neighobrs) 3- repeat dfs-loop starting with the largest end time, SCCs are isolated sub-graphs
 	- SCC metagraph is a DAG (if not 2 SCCs collapse into one)
 	- Largest end_time has no incoming edges, reversing the edges means it'll have no outgoing edges so it'll be an SCC, same follows for other SCCs
-
+	- for (u, v) in SCC metagraph where u in C_1 and v in C_2 end time of C_1 > end time of C_2
 
 
 ### Single Source Shortest Path (SSSP)
