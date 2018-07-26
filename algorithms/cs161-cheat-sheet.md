@@ -160,6 +160,7 @@ Recursive
 		- bfs colors two neighbors the same color iff it's found a cycle of odd length. impossible to color an odd cycle with 2 colors s.t. no 2 neighbors have the same color.
 - strongly connected components (scc). kosaraju's. 1- dfs-loop 2- reverse edges (helps to have incoming neighobrs) 3- repeat dfs-loop starting with the largest end time, SCCs are isolated sub-graphs
 	- SCC metagraph is a DAG (if not 2 SCCs collapse into one)
+	- Largest end_time has no incoming edges, reversing the edges means it'll have no outgoing edges so it'll be an SCC, same follows for other SCCs
 
 
 
