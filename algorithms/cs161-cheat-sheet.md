@@ -17,13 +17,17 @@
 - [ ] Lecture 3 page 10 "but we can solve select(B, m/2) for len(B)=m < n assuming correctness of the algorithm on smaller inputs is a helpful technique for designing divide and conquer algorithms"
 - [ ] T(n) <= T(n/5) + T(0.7n) + O(n) for linear time selection. T(n/5) comes from median of median, T(0.7n) comes from the upper bound on the numbe of elements that will be in either left or right lists, and O(n) comes from the partitioning?
 - [ ] shallow tree for comparison sort. is this tree structure unique for a binary tree which produces exactly the n! permutations?
-- d(x) = 1 + d(x.L) + d(x.R), what is the 1 doing there?
+- [ ] d(x) = 1 + d(x.L) + d(x.R), what is the 1 doing there?
+- [ ] Tight vs. loosed bound? If a bound is tight that means it is an upper and a lower bound (which seems to just be equivalent to Big Theta notation) and if it is loose, it simply means that it is not tight (e.g different upper and lower bounds). You can express a tight-bound using Big-O or Big-Ω. For example, any of the following statements would be tight-bounds on the worst-case runtime of insertion sort: O(n2), Ω(n2), Θ(n2).
+- ...
 
 ## Useful stuff
 - Sum_c^n 1/c = O(logn)
-- Sum of infinite geometric series Sum_{i=0}^{\infty}r^k where 0 < k < 1 = 1 / (1 - r)
-- E[P(T)]=Sum E[P(T)|r(T)=i].P(r(T)=i) where P(r(T)=i)
-- quicksort recurrence P(n)=n-1 + 1/n Sum_{i=0}&{n-1} (P(i) + P(n-i-1))
+- Sum of infinite geometric series `Sum_{i=0}^{\infty}r^k` where `0 < k < 1` equals `1 / (1 - r)`
+- `E[P(T)]=Sum E[P(T)|r(T)=i].P(r(T)=i) where P(r(T)=i)`
+- quicksort recurrence `P(n)=n-1 + 1/n Sum_{i=0}&{n-1} (P(i) + P(n-i-1))`
+- Markov's inequality c>0, `Pr[X>cE[X]] < 1/c`
+- 
 - ...
 
 ## Algorithmic Analysis
@@ -88,6 +92,7 @@ Recursive
 	- a=b^d   => O(n^d * logn)
 	- a < b^d => O(n^d)
 	- a > b^d => O(n^log_b(a))
+- Top-heavy: lots of work towards the top, not very deep
 
 ### Linear-time selection
 - Comparison-based
