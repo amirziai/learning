@@ -134,3 +134,6 @@ ENV/
 *.out
 *.o
 *.app
+
+.idea/
+
